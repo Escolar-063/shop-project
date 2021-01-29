@@ -1,79 +1,100 @@
+<!--Версия от 29 янв 2021-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson-1</title>
-    <!--link rel="stylesheet" href="style.css"-->
+    <title>Lesson-2</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
-        <img src="" alt="">
-        <input type="search" class="search">
-        <ul>
-            <li><button><img src="http://via.placeholder.com/32" alt="push"></button></li>
-            <li><button><img src="http://via.placeholder.com/32" alt="push"></button></li>
-            <li><button><img src="http://via.placeholder.com/32" alt="push"></button></li>
-        </ul>
-        <nav>
-            <h2>menu</h2>
-            <ul>
-                <li>
-                    <h3>man-man</h3>
-                    <ul>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Bags</a></li>
-                        <li><a href="#">Denim</a></li>
-                        <li><a href="#">T-Shirts</a></li>
-                    </ul>
+        <div class="container header__wrapper">
+            <div class="header__logo_wrapper">
+                <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+                <img src="./img/loupe.svg" alt="loupe" width="26" height="26">
+                <!--input type="search" class="search"-->
+            </div>
+            <ul class="header__list">
+                <li><button class="header__button">
+                        <img src="./img/burger.svg" alt="burger" width="32" height="29">
+                    </button>
                 </li>
-                <li>
-                    <h3>woman</h3>
-                    <ul>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Jackets & Coats</a></li>
-                        <li><a href="#">Polos</a></li>
-                        <li><a href="#">T-Shirts</a></li>
-                        <li><a href="#">Shirts</a></li>
-                    </ul>
+                <li><button class="header__button">
+                        <img src="./img/man.svg" alt="man" width="32" height="29">
+                    </button>
                 </li>
-                <li>
-                    <h3>kids</h3>
-                    <ul>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Jackets & Coats</a></li>
-                        <li><a href="#">Polos</a></li>
-                        <li><a href="#">T-Shirts</a></li>
-                        <li><a href="#">Shirts</a></li>
-                        <li><a href="#">Bags</a></li>
-                    </ul>
+                <li><button class="header__button">
+                        <img src="./img/bag.svg" alt="bag" width="32" height="29">
+                    </button>
                 </li>
             </ul>
-        </nav>
+            <nav class="header__navigation">
+                <h2>menu</h2>
+                <ul>
+                    <li>
+                        <h3>man</h3>
+                        <ul>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Bags</a></li>
+                            <li><a href="#">Denim</a></li>
+                            <li><a href="#">T-Shirts</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>woman</h3>
+                        <ul>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Jackets & Coats</a></li>
+                            <li><a href="#">Polos</a></li>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Shirts</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>kids</h3>
+                        <ul>
+                            <li><a href="#">Accessories</a></li>
+                            <li><a href="#">Jackets & Coats</a></li>
+                            <li><a href="#">Polos</a></li>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Shirts</a></li>
+                            <li><a href="#">Bags</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="main">
         <section class="intro">
-            <img src="http://via.placeholder.com/1602x764" alt="photo">
-            <h1>the brand of luxerious fashion</h1>
+            <img src="./img/boy.jpg" alt="boy" width="800" height="765">
+            <div class="intro__heading_wrapper">
+                <h1 class="intro__heading">the brand<span class="intro__text">of luxerious<span
+                            class="intro__pink">fashion</span></span< /h1>
+            </div>
         </section>
         <section class="stock">
-            <!--h2>Stock</h2-->
-            <ul>
-                <li>
+            <h2 class="visually-hidden">Stock</h2>
+            <ul class="stock__list container">
+                <li class="stock__item stock__item_women">
                     <h3>30% off for women</h3>
                     <p>text</p>
                 </li>
-                <li>
+                <li class="stock__item stock__item_man">
                     <h3>hot deal for men</h3>
                     <p>text</p>
                 </li>
-                <li>
+                <li class="stock__item stock__item_kids">
                     <h3>new arrivals for kids</h3>
                     <p>text</p>
                 </li>
-                <li>
+                <li class="stock__item stock__item_shoes">
                     <h3>luxirous & trendy accesories</h3>
                     <p>text</p>
                 </li>
