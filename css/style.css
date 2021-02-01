@@ -214,7 +214,15 @@ body {
 }
 
 .fetured__button {
-
+    min-width: 211px;
+    min-height: 47px;
+    border: 1px solid #FF6A6A;
+    margin: 48px 0 0 500px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
 }
 
 .fetured__heading {
@@ -238,4 +246,49 @@ body {
     margin: 6px 0px 48px 0px;
 }
 
+.advanteges__list {
+    min-height: 341px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #222224;
+    margin: 96px 0 0 0 ;
+    /*border: 1px solid chocolate;*/
+}
+
+.advanteges__item {
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid rgb(107, 7, 27);*/
+}
+
+.advanteges__header {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.advanteges__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.
+/*
+.advanteges__item_logo {
+    align-self: center;
+    margin-bottom: 0px;
+    position: relative;
+}
+*/
 
