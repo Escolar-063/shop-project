@@ -11,6 +11,7 @@ body {
     font-weight: 300;
     line-height: 17px;
 }
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -22,9 +23,14 @@ body {
     clip: rect(0 0 0 0)
 }
 
+.header__footer {
+    width: 1600px;
+    margin: 0 0 0 0;
+}
+
 .container {
     width: 1140px;
-    margin: 0 auto;
+    margin: 0 0 0 0;
 }
 
 .header {
@@ -60,9 +66,11 @@ body {
     border: none;
     margin: 0 0 0 34px;
 }
+
 .intro {
     display: flex;
 }
+
 .intro__heading {
     font-size: 48px;
     font-style: normal;
@@ -77,7 +85,9 @@ body {
     display: flex;
     align-items: center;
     padding: 0 0 0 40px;
+    margin: 0 530px 0 0;
 }
+
 .intro__text {
     font-size: 32px;
     font-style: normal;
@@ -94,7 +104,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 64px 0 0 0;
+    padding: 64px 0 0 130px;
     margin: 0 0 98px 0;
 }
 
@@ -102,29 +112,30 @@ body {
     width: 360px;
     min-height: 260px;
     background-color: rgba(33, 22, 22, 0.7);
-    background-image: url(../img/stock-img-1.jpg);
+    background-image: url(../img/stock-img-1-2.jpg);
 }
 
 .stock__item_man {
     width: 360px;
     min-height: 260px;
     background-color: rgba(33, 22, 22, 0.7);
-    background-image: url(../img/stock-img-2.jpg);
+    background-image: url(../img/stock-img-2-2.jpg);
 }
 
 .stock__item_kids {
     width: 360px;
     min-height: 260px;
     background-color:  rgba(33, 22, 22, 0.7);
-    background-image: url(../img/stock-img-3.jpg);
+    background-image: url(../img/stock-img-3-2.jpg);
 }
 
 .stock__item_shoes {
     width: 100%;
     min-height: 180px;
     margin: 30px 0 0 0;
-    background-image: url(../img/stock-img-4.jpg);
+    background-image: url(../img/stock-img-4-2.jpg);
 }
+
 .stock__text_white {
     font-family: Lato;
     font-style: normal;
@@ -165,7 +176,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 0 0 0;
-    margin: 0 0 0 0;
+    margin: 0 0 0 130px;
 }
 
 .fetured__item {
@@ -179,11 +190,11 @@ body {
     padding: 0px 0px 0px 0px;
 }
 
-.fetured__item_photo {
+/*.fetured__item_photo {
     width: 360px;
     height: 420px;
-    margin: 0px 0px 0px 110px;
-}
+    margin: 0px 0px 0px 0px;
+}*/
 
 .fetured__header {
     font-weight: 400;
@@ -217,12 +228,17 @@ body {
     min-width: 211px;
     min-height: 47px;
     border: 1px solid #FF6A6A;
-    margin: 48px 0 0 500px;
+    /*margin: 48px 0 0 500px;
+    display: block;
+    justify-content: center;*/
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
+    padding: 15px 39px;
+    text-decoration: none;
+    margin: 0 0 0 595px;
 }
 
 .fetured__heading {
@@ -252,7 +268,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background: #222224;
-    margin: 96px 0 0 0 ;
+    margin: 96px 0 0 0;
     /*border: 1px solid chocolate;*/
 }
 
@@ -283,7 +299,7 @@ body {
     margin-top: 16px;
 }
 
-.
+
 /*
 .advanteges__item_logo {
     align-self: center;
