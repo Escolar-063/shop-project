@@ -12,12 +12,7 @@ $block-color: #777;
 $black-color: #222222;
 $pink-color: #F1E4E6;
 $pink-dark-color: #F16D7F;
-
-
-* {
-    margin: 0;
-    padding: 0;
-}
+$pink-color: #F8F3F4;
 
 body {
     font-family: 'Lato', 'Arial', sans-serif;
@@ -176,7 +171,7 @@ body {
         line-height: 28,8px;
         text-align: center;
         text-transform: uppercase;
-        color: var(--pink-dark-color);
+        color: $pink-dark-color;
     }
 }
 
@@ -445,13 +440,12 @@ body {
     
     &__list {
         display: flex;
-        /*border: 1px solid chartreuse;*/
     }
     
     &__button {
         background-color: transparent;
         border: none;
-        margin: 0 0 0 0;
+        margin: 0 8px 0 0;
     }
     
     &__text {
@@ -465,5 +459,77 @@ body {
     
 }
 
+.registration {
+    min-height: 148px;
+    background-color: $pink-color;
+    margin: 0 0 64px 0;
+}
+
+.registration__text_h2 {
+    margin: 22px 0 22px 0;
+}
+
+.registration__text_h3 {
+    margin: 0 0 16px 0;
+}
+
+.registration__text_pink {
+    font-weight: 400;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #F16D7F;
+    padding: 60px 0 60px 230px;
+}
+
+.registration__text_black {
+    font-weight: 300;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    /*text-transform: uppercase;*/
+    color: #000000;
+}
+
+.legend__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin: 0 0 0 231px;
+}
+
+.input {
+    display: flex;
+}
+
+.input__block {
+    display: block;
+    width: 360px;
+    margin: 22px 128px 22px 231px;
+}
+
+.input__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    padding: 13px 0 16px 18px;
+}
+
+/*.last_name {
+    display: block;
+    margin: 21px 0 21px 231px;
+}
+
+.password {
+    display: block;
+    margin: 21px 0 21px 231px;
+}*/
 
 
