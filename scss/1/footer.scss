@@ -1,0 +1,27 @@
+.footer {
+    background-color: $block-color - #222;
+
+    &__wrapper {
+        min-height: 79px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    &__list {
+        display: flex;
+    }
+    
+    &__button {
+        background-color: transparent;
+        border: none;
+        margin: 0 8px 0 0;
+    }
+    
+    &__text {
+        @include font(16px, 19px, normal);
+        color: #FBFBFB;
+        margin: 0 0 0 0px;
+    }
+    
+}

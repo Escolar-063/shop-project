@@ -1,4 +1,4 @@
-<!--Версия от 06 фев 2021-->
+<!--Версия от 11 фев 2021-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,33 +75,64 @@
         <section class="registration">
             <h2 class="registration__text_pink">registration</h2>
         </section>
-        <form class="input" action="" method="POST">
-            <fieldset>
-                <legend class="legend__text">Your Name</legend>
-                <input type="text" placeholder="First Name" class="input__block input__text first_name">
-                <input type="text" placeholder="Last Name" class="input__block input__text">
-                <legend class="legend__text">Login details</legend>
-                <input class="input__block input__text" type="email" placeholder="Email">
-                <input type="password" placeholder="Password" class="input__block input__text">
-                <p class="input__block input__text">Please use 8 or more characters, with at least 1 number and a
-                    mixture of uppercase and lowercase
-                    letters</p>
-            </fieldset>
-            <fieldset>
-                <p class="registration__text_black">LOYALTY HAS ITS PERKS</p>
-                <p class="registration__text_h2 registration__text_black">Get in on the loyalty program where you can
+        <section class="input-section">
+            <form class="input" action="" method="POST">
+                <fieldset>
+                    <legend class="legend__text">Your Name</legend>
+                    <input type="text" placeholder="First Name" class="input__block input__text first_name">
+                    <input type="text" placeholder="Last Name" class="input__block input__text">
+                </fieldset>
+                <fieldset>
+                    <div class="input__gender">
+                        <legend class="visually-hidden">Your gender</legend>
+                        <input class="radio__input" type="radio" id="male" name="gender" value="male">
+                        <label class="radio__label" for="male">Male</label>
+                        <input class="radio__input" type="radio" id="female" name="gender" value="female">
+                        <label class="radio__label" for="female">Female</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="legend__text">Login details</legend>
+                    <input class="input__block input__text" type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" class="input__block input__text">
+                    <p class="input__block input__text">Please use 8 or more characters, with at least 1 number and a
+                        mixture of uppercase and lowercase
+                        letters</p>
+                </fieldset>
+                <a href="#" class="registration__button">join now</a>
+            </form>
+            <div>
+                <p class="registration__header registration__text_black">loyalty has its perks</p>
+                <p class="registration__text_black">Get in on the loyalty program where you can
                     earn points and unlock
                     serious perks. Starting with these as
                     soon as you join:</p>
-                <p class="registration__text_h3 registration__text_black">15% off welcome offer</p>
-                <p class="registration__text_h3 registration__text_black">Free shipping, returns and exchanges on all
+                <p class="registration__title registration__text_black">15% off welcome offer</p>
+                <p class="registration__title registration__text_black">Free shipping, returns and exchanges on all
                     orders</p>
-                <p class="registration__text_h3 registration__text_black">$10 off a purchase on your birthday</p>
-                <p class="registration__text_h3 registration__text_black">Early access to products</p>
-                <p class="registration__text_h3 registration__text_black">Exclusive offers & rewards</p>
-            </fieldset>
-        </form>
-
+                <p class="registration__title registration__text_black">$10 off a purchase on your birthday</p>
+                <p class="registration__title registration__text_black">Early access to products</p>
+                <p class="registration__title registration__text_black">Exclusive offers & rewards</p>
+            </div>
+        </section>
+        <section class="subscribe">
+            <h2 class="visually-hidden">subscribe</h2>
+            <ul class="subscribe__list">
+                <li class="subscribe__girl">
+                    <img src="./img/subscribe-girl.jpg" alt="girl" width="145" height="150">
+                    <p class="subscribe__girl_text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                        purus condimentum“</p>
+                </li>
+                <li class="subscribe__email">
+                    <h3 class="subscribe__text_first">subscribe</h3>
+                    <h3 class="subscribe__text_second">for our newletter and promotion</h3>
+                    <div class="subscribe__button">
+                        <a href="#" class="subscribe__button_gray">Enter Your Email</a>
+                        <a href="#" class="subscribe__button_pink">Subscribe</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
     </main>
 
     <footer class="footer">

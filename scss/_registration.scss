@@ -1,0 +1,129 @@
+.registration {
+    min-height: 148px;
+    background-color: $pink-color;
+    margin: 0 0 64px 0;
+    /*border: $border-width solid $border-color;*/
+    /*border: 1px solid cyan;*/
+}
+
+.registration__header {
+    text-transform: uppercase;
+    margin: 22px 0 22px 0;
+}
+
+.registration__title {
+    position: relative;
+    margin: 16px 0 0 0;
+}
+
+/*ОСТАЛСЯ ЭФФЕКТ НАВЕДЕНИЯ*/
+
+.registration__title::before {
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    /*border: 1px solid cyan;*/
+    content: '';
+    margin: 5px 0 0 -33px;
+    background-image: url(../img/cursor.svg);
+}
+
+.registration__text_pink {
+    @include font(24px, 29px, 400);
+    text-transform: uppercase;
+    color: $pink-dark-color;
+    padding: 60px 0 60px 230px;
+}
+
+.registration__text_black {
+    @include font(24px, 29px, 300);
+    /*text-transform: uppercase;*/
+    color: $black-color;
+}
+
+.legend__text {
+    @include font(16px, 19px, 300);
+    color: $black-color;
+    margin: 0 0 0 231px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    /*border: $border-width solid $border-color;*/
+}
+
+.input-section {
+    display: flex;
+    /*border: $border-width solid $border-color;*/
+}
+
+.input__block {
+    display: block;
+    width: 360px;
+    margin: 22px 128px 22px 231px;
+}
+
+.input__text {
+    @include font(13px, 16px, 300);
+    color: $grey-color;
+    padding: 13px 0 16px 18px;
+}
+
+.input__gender {
+    margin: 34px 0 35px 231px;
+}
+
+.radio__input {
+    display: none;    
+}
+
+/*ОСТАЛСЯ ЭФФЕКТ НАВЕДЕНИЯ*/
+
+.radio__input:checked+.radio__label::before {
+    background-image: url(../img/circle.svg);
+    background-color: blue;
+}
+
+.radio__label {
+    position: relative;
+    margin: 0 50px 0 0;
+    /*border: 1px solid red;*/
+}
+
+.radio__label:before {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    /*border: 1px solid cyan;*/
+    content: '';
+    left: -33px;
+    background-image: url(../img/circle.svg);
+    /*background-size: 20px 20px;*/
+}
+
+.registration__button {
+    @include font(16px, 19px, normal);
+        max-width: 167px;
+        /*min-height: 47px;*/
+        border: 1px solid #FF6A6A;
+        color: $white-color-abs;
+        background:$pink-dark-color;
+        padding: 16px 66px 17px 29px;
+        text-decoration: none;
+        text-transform: uppercase;
+        display: inline-block;
+        align-self: auto;
+        margin: 39px 0 96px 231px;
+}
+
+/*.last_name {
+    display: block;
+    margin: 21px 0 21px 231px;
+}
+
+.password {
+    display: block;
+    margin: 21px 0 21px 231px;
+}*/
+

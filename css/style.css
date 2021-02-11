@@ -1,8 +1,4 @@
-/*:root {
-    --black-color: #222222;
-    --pink-color: #F1E4E6;
-    --pink-dark-color:#F16D7F;
-}*/
+@charset "UTF-8";
 body {
   font-family: 'Lato', 'Arial', sans-serif;
   font-size: 14px;
@@ -26,6 +22,59 @@ body {
   width: 1140px;
   margin: 0 auto;
   /*border: 1px solid var(--pink-dark-color);*/
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .header {
@@ -63,14 +112,14 @@ body {
   display: flex;
 }
 
+.header__navigation {
+  display: none;
+}
+
 .header__button {
   background-color: transparent;
   border: none;
-  margin: 0 0 0 34px;
-}
-
-.header__navigation {
-  display: none;
+  margin: 0 0 0 33px;
 }
 
 .intro {
@@ -82,8 +131,8 @@ body {
 
 .intro__heading {
   font-size: 48px;
-  font-style: normal;
   font-weight: 900;
+  font-style: normal;
   line-height: 58px;
   text-transform: uppercase;
   /*background: rgba(0, 0, 0, 0.5);*/
@@ -91,7 +140,7 @@ body {
 
 .intro__heading_wrapper {
   width: 100%;
-  background-color: #F8F3F4;
+  background-color: #F1E4E6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,13 +148,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 0 0 40px;
-  margin: 0 0 0 0;
 }
 
 .intro__text {
   font-size: 32px;
-  font-style: normal;
   font-weight: 700;
+  font-style: normal;
   line-height: 38px;
   display: block;
 }
@@ -161,11 +209,10 @@ body {
 }
 
 .stock__text_white {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 19,2px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 19.2px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -173,11 +220,10 @@ body {
 }
 
 .stock__text_white_luxirous {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 19,2px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 19.2px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -185,11 +231,10 @@ body {
 }
 
 .stock__text_pink {
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 700;
   font-size: 24px;
-  line-height: 28,8px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 29px;
   text-align: center;
   text-transform: uppercase;
   color: #F16D7F;
@@ -227,41 +272,41 @@ body {
 }
 
 .fetured__header {
-  font-weight: 400;
   font-size: 13px;
-  line-height: 16px;
+  font-weight: 400;
   font-style: normal;
+  line-height: 16px;
   color: #000000;
   text-transform: uppercase;
   margin: 26px 0 0 18px;
 }
 
 .fetured__text {
-  font-weight: 300;
   font-size: 14px;
-  line-height: 17px;
+  font-weight: 300;
   font-style: normal;
+  line-height: 17px;
   color: #5D5D5D;
   margin: 13px 0 0 17px;
 }
 
 .fetured__price {
-  font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  font-weight: 400;
   font-style: normal;
+  line-height: 19px;
   color: #F16D7F;
   margin: 18px 0 0 18px;
 }
 
 .fetured__button {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 19px;
   /*min-width: 211px;
         min-height: 47px;*/
   border: 1px solid #FF6A6A;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
   color: #F26376;
   padding: 14px 39px;
   text-decoration: none;
@@ -273,9 +318,9 @@ body {
 }
 
 .fetured__heading {
-  font-style: normal;
-  font-weight: 400;
   font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
   line-height: 36px;
   color: #222222;
   display: -webkit-box;
@@ -288,9 +333,9 @@ body {
 }
 
 .fetured__heading_text {
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
   line-height: 17px;
   color: #9F9F9F;
   display: -webkit-box;
@@ -341,9 +386,9 @@ body {
 }
 
 .advanteges__header {
-  font-style: normal;
+  font-size: 20px;
   font-weight: normal;
-  font-size: 19.96px;
+  font-style: normal;
   line-height: 24px;
   color: #FBFBFB;
   text-align: center;
@@ -351,9 +396,9 @@ body {
 }
 
 .advanteges__text {
-  font-style: normal;
+  font-size: 14px;
   font-weight: 300;
-  font-size: 13.972px;
+  font-style: normal;
   line-height: 17px;
   text-align: center;
   color: #FBFBFB;
@@ -396,9 +441,9 @@ body {
 }
 
 .subscribe__girl_text {
-  font-style: normal;
-  font-weight: normal;
   font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
   line-height: 24px;
   text-align: center;
   color: #222224;
@@ -417,20 +462,19 @@ body {
 }
 
 .subscribe__text_first {
-  font-style: normal;
+  font-size: 20px;
   font-weight: bold;
-  font-size: 24px;
+  font-style: normal;
   line-height: 40px;
-  /* or 167%*/
   text-align: center;
   color: #222224;
   text-transform: uppercase;
 }
 
 .subscribe__text_second {
-  font-style: normal;
-  font-weight: bold;
   font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
   line-height: 30px;
   text-align: center;
   color: #222224;
@@ -453,10 +497,9 @@ body {
         display: block;
         justify-content: center;*/
   width: 323px;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
   line-height: 17px;
   text-align: left;
   color: #222224;
@@ -479,10 +522,9 @@ body {
         display: block;
         justify-content: center;*/
   width: 100px;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
   line-height: 17px;
   text-align: center;
   color: #FFFFFF;
@@ -527,9 +569,9 @@ body {
 }
 
 .footer__text {
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
   line-height: 19px;
   color: #FBFBFB;
   margin: 0 0 0 0px;
@@ -537,19 +579,37 @@ body {
 
 .registration {
   min-height: 148px;
-  background-color: #F8F3F4;
+  background-color: #F1E4E6;
   margin: 0 0 64px 0;
+  /*border: $border-width solid $border-color;*/
+  /*border: 1px solid cyan;*/
 }
 
-.registration__text_h3 {
-  margin: 0 0 16px 0;
+.registration__header {
+  text-transform: uppercase;
+  margin: 22px 0 22px 0;
+}
+
+.registration__title {
+  position: relative;
+  margin: 16px 0 0 0;
+}
+
+/*ОСТАЛСЯ ЭФФЕКТ НАВЕДЕНИЯ*/
+.registration__title::before {
+  position: absolute;
+  width: 20px;
+  height: 16px;
+  /*border: 1px solid cyan;*/
+  content: '';
+  margin: 5px 0 0 -33px;
+  background-image: url(../img/cursor.svg);
 }
 
 .registration__text_pink {
+  font-size: 24px;
   font-weight: 400;
   font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
   line-height: 29px;
   text-transform: uppercase;
   color: #F16D7F;
@@ -557,19 +617,18 @@ body {
 }
 
 .registration__text_black {
+  font-size: 24px;
   font-weight: 300;
   font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
   line-height: 29px;
   /*text-transform: uppercase;*/
-  color: #000000;
+  color: #222222;
 }
 
 .legend__text {
-  font-style: normal;
-  font-weight: 300;
   font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
   line-height: 19px;
   color: #222222;
   margin: 0 0 0 231px;
@@ -579,6 +638,18 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*border: $border-width solid $border-color;*/
+}
+
+.input-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*border: $border-width solid $border-color;*/
 }
 
 .input__block {
@@ -588,12 +659,63 @@ body {
 }
 
 .input__text {
-  font-style: normal;
-  font-weight: 300;
   font-size: 13px;
+  font-weight: 300;
+  font-style: normal;
   line-height: 16px;
   color: #B1B1B1;
   padding: 13px 0 16px 18px;
+}
+
+.input__gender {
+  margin: 34px 0 35px 231px;
+}
+
+.radio__input {
+  display: none;
+}
+
+/*ОСТАЛСЯ ЭФФЕКТ НАВЕДЕНИЯ*/
+.radio__input:checked + .radio__label::before {
+  background-image: url(../img/circle.svg);
+  background-color: blue;
+}
+
+.radio__label {
+  position: relative;
+  margin: 0 50px 0 0;
+  /*border: 1px solid red;*/
+}
+
+.radio__label:before {
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  /*border: 1px solid cyan;*/
+  content: '';
+  left: -33px;
+  background-image: url(../img/circle.svg);
+  /*background-size: 20px 20px;*/
+}
+
+.registration__button {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 19px;
+  max-width: 167px;
+  /*min-height: 47px;*/
+  border: 1px solid #FF6A6A;
+  color: #FFFFFF;
+  background: #F16D7F;
+  padding: 16px 66px 17px 29px;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  -ms-flex-item-align: auto;
+      -ms-grid-row-align: auto;
+      align-self: auto;
+  margin: 39px 0 96px 231px;
 }
 
 /*.last_name {

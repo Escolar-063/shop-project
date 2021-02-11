@@ -1,0 +1,28 @@
+.header {
+    background-color: #777;
+
+    &__wrapper {
+        min-height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__logo_wrapper {
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        margin: 0 41px 0 0;
+    }
+    &__list {
+        display: flex;
+    }
+    &__navigation {
+        display: none;
+    }
+    &__button {
+        background-color: transparent;
+        border: none;
+        margin: 0 0 0 33px;
+    }
+}
