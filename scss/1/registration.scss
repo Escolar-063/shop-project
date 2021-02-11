@@ -1,0 +1,59 @@
+.registration {
+    min-height: 148px;
+    background-color: $pink-color;
+    margin: 0 0 64px 0;
+}
+
+.registration__text_h2 {
+    margin: 22px 0 22px 0;
+}
+
+.registration__text_h3 {
+    margin: 0 0 16px 0;
+}
+
+.registration__text_pink {
+    @include font(24px, 29px, 400);
+    text-transform: uppercase;
+    color: #F16D7F;
+    padding: 60px 0 60px 230px;
+}
+
+.registration__text_black {
+    @include font(24px, 29px, 300);
+    /*text-transform: uppercase;*/
+    color: #000000;
+}
+
+.legend__text {
+    @include font(16px, 19px, 300);
+    color: #222222;
+    margin: 0 0 0 231px;
+}
+
+.input {
+    display: flex;
+}
+
+.input__block {
+    display: block;
+    width: 360px;
+    margin: 22px 128px 22px 231px;
+}
+
+.input__text {
+    @include font(13px, 16px, 300);
+    color: #B1B1B1;
+    padding: 13px 0 16px 18px;
+}
+
+/*.last_name {
+    display: block;
+    margin: 21px 0 21px 231px;
+}
+
+.password {
+    display: block;
+    margin: 21px 0 21px 231px;
+}*/
+

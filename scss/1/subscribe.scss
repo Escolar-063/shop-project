@@ -1,0 +1,96 @@
+.subscribe {
+    background: no-repeat center/100% url(../img/subscribe-back-gr-1.jpg);
+    /*border: $border-width solid $border-color;*/
+
+    &__list {
+        min-height: 448px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 0 0 0 0;
+        /*border: 1px solid chocolate;*/
+    }
+    
+    &__girl {
+        width: 360px;
+        /*height: 99px;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /*border: 1px solid cyan;*/
+    }
+    
+    &__girl_text {
+        @include font(20px, 24px, normal);
+        text-align: center;
+        color: #222224;
+        margin-top: 50px;
+    }
+
+    &__email {
+        display: flex;
+        flex-direction: column;
+        /*border: 1px solid cyan;*/
+    }
+    
+    &__text_first {
+        @include font(20px, 40px, bold);
+        text-align: center;
+        color: #222224;
+        text-transform: uppercase;
+    }
+
+    &__text_second {
+        @include font(18px, 30px, bold);
+        text-align: center;
+        color: #222224;
+        text-transform: uppercase;
+    }
+    
+    &__button {
+        display: flex;
+        position: relative;
+        margin-top: 32px;
+    }
+
+    &__button_gray {
+        /*min-width: 323px;
+        min-height: 49px;
+        border: 1px solid #FF6A6A;
+        /*margin: 48px 0 0 500px;
+        display: block;
+        justify-content: center;*/
+        width: 323px;
+        @include font(14px, 17px, 400);
+        text-align:left;
+        color: #222224;
+        background: #E1E1E1;
+        border-radius: 18px;
+        text-decoration: none;
+        /*display: flex;*/
+        align-items: center;
+        padding: 17px 0px 16px 22px;
+        margin: 0px 0 0 0;
+    }
+
+    &__button_pink {
+        /*min-width: 323px;
+        min-height: 49px;
+        border: 1px solid;
+        /*margin: 48px 0 0 500px;
+        display: block;
+        justify-content: center;*/
+        width: 100px;
+        @include font(14px, 17px, 400);
+        text-align: center;
+        color: #FFFFFF;
+        background: #F16D7F;
+        border-radius: 0 18px 18px 0;
+        text-decoration: none;
+        /*display: flex;*/
+        align-items: center;
+        padding: 17px 7px 16px 8px;
+        margin: 0 0 0 232px;
+        position: absolute;
+    }
+}

@@ -1,0 +1,40 @@
+.advanteges {
+
+    &__list {
+        min-height: 341px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $black-color-4;
+        margin: 96px 0 0 0;
+        /*border: 1px solid chocolate;*/
+    }
+    
+    &__item {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 0px;
+        /*border: 1px solid cyan;*/
+    }
+    
+    &__header {
+        @include font(20px, 24px, normal);
+        color: $white-color;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    &__text {
+        @include font(14px, 17px, 300);
+        text-align: center;
+        color: $white-color;
+        margin-top: 16px;
+    }
+    
+    /*.advanteges__item_logo {
+        align-self: center;
+        margin-bottom: 0px;
+        position: relative;
+    }*/
+}

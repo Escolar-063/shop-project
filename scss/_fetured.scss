@@ -1,0 +1,72 @@
+.fetured {
+    justify-content: center;
+    /*border: $border-width solid $border-color;*/
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 0 0 125px;
+        /*border: $border-width solid $border-color;*/
+    }
+    
+    &__item {
+        width: 360px;
+        min-height: 581px;
+        background: #F8F8F8;
+        margin-bottom: 30px;
+    }
+    
+    &__item_two {
+        padding: 0px 0px 0px 0px;
+    }
+
+    &__header {
+        @include font(13px, 16px, 400);
+        color: #000000;
+        text-transform: uppercase;
+        margin: 26px 0 0 18px;
+    }
+
+    &__text {
+        @include font(14px, 17px, 300);
+        color: #5D5D5D;
+        margin: 13px 0 0 17px;
+    }
+
+    &__price {
+        @include font(16px, 19px, 400);
+        color: $pink-dark-color;
+        margin: 18px 0 0 18px;
+    }
+    
+    &__button {
+        @include font(16px, 19px, normal);
+        /*min-width: 211px;
+        min-height: 47px;*/
+        border: 1px solid #FF6A6A;
+        color: #F26376;
+        padding: 14px 39px;
+        text-decoration: none;
+        display: inline-block;
+        align-self: auto;
+        margin: 48px 0 0 580px;
+    }
+
+    &__heading {
+        @include font(30px, 36px, 400);
+        color: $black-color;
+        display: flex;
+        justify-content: center;
+        /*border: 1px solid chocolate;*/
+    }
+    
+    &__heading_text {
+        @include font(14px, 17px, 400);
+        color: #9F9F9F;
+        display: flex;
+        justify-content: center;
+        margin: 6px 0px 48px 0px;
+        /*border: 1px solid chocolate;*/
+    }
+}
