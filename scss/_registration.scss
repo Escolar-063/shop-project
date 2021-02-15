@@ -14,6 +14,9 @@
 .registration__title {
     position: relative;
     margin: 16px 0 0 0;
+    @include mobile {
+        margin: 17px 0 0 52px;
+    }
 }
 
 /*ОСТАЛСЯ ЭФФЕКТ НАВЕДЕНИЯ*/
@@ -33,18 +36,38 @@
     text-transform: uppercase;
     color: $pink-dark-color;
     padding: 60px 0 60px 230px;
+    @include tablet {
+        padding: 60px 0 60px 16px;
+    }
+    @include mobile {
+        padding: 60px 0 60px 103px;
+    }
 }
 
 .registration__text_black {
     @include font(24px, 29px, 300);
     /*text-transform: uppercase;*/
     color: $black-color;
+    @include tablet {
+        @include font(16px, 19px, 300);
+    }
+    @include mobile {
+        @include font(16px, 19px, 300);
+        padding: 0 0 0 8px;
+//        margin: 0 0 17px 4px;
+    }
 }
 
 .legend__text {
     @include font(16px, 19px, 300);
     color: $black-color;
     margin: 0 0 0 231px;
+    @include tablet {
+        margin: 0 0 0 17px;
+    }
+    @include mobile {
+        margin: 0 0 17px 8px;
+    }
 }
 
 .input {
@@ -55,23 +78,44 @@
 
 .input-section {
     display: flex;
+    @include mobile {
+        flex-direction: column;
+    }
     /*border: $border-width solid $border-color;*/
 }
 
 .input__block {
     display: block;
-    width: 360px;
+    max-width: 360px;
     margin: 22px 128px 22px 231px;
+    @include tablet {
+        margin: 20px 172px 0 16px;
+        padding: 13px 0 16px 18px;
+    }
+    @include mobile {
+        width: 91.7%;
+        margin: 0 0 0 9px;
+    }
 }
 
 .input__text {
     @include font(13px, 16px, 300);
     color: $grey-color;
     padding: 13px 0 16px 18px;
+    @include mobile {
+        padding: 13px 0 16px 8px;
+    }
+
 }
 
 .input__gender {
     margin: 34px 0 35px 231px;
+    @include tablet {
+        margin: 20px 0 20px 52px;
+    }
+    @include mobile {
+        margin: 34px 0 35px 37px;
+    }
 }
 
 .radio__input {
@@ -115,6 +159,13 @@
         display: inline-block;
         align-self: auto;
         margin: 39px 0 96px 231px;
+        @include tablet {
+            margin: 34px 0 35px 16px;
+        }
+        @include mobile {
+            margin: 34px 0 35px 9px;
+            padding: 16px 29px 17px 29px;
+        }
 }
 
 /*.last_name {
