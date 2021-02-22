@@ -1,0 +1,278 @@
+.shopping {
+    min-height: 148px;
+    background-color: $pink-color;
+    margin: 0 0 96px 0;
+    /*border: $border-width solid $border-color;*/
+    /*border: 1px solid cyan;*/
+}
+
+.shopping__header {
+    text-transform: uppercase;
+    margin: 22px 0 22px 0;
+}
+
+.shopping-shipping {
+    display: flex;
+    // border: 1px solid red;
+}
+
+.shopping__item {
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid cyan;
+}
+
+.shopping__cart {
+    display: flex;
+    margin: 0 0 40px 0;
+    // border: 1px solid cyan;
+}
+
+.shopping__text_pink {
+    @include font(24px, 29px, 400);
+    text-transform: uppercase;
+    color: $pink-dark-color;
+    padding: 60px 0 60px 230px;
+    @include tablet {
+        padding: 60px 0 60px 16px;
+    }
+    @include mobile {
+        padding: 60px 0 60px 103px;
+    }
+}
+
+.shopping__text_heading {
+    @include font(24px, 29px, 400);
+    text-transform: uppercase;
+    color: #222222;
+    margin: 22px 97px 42px 31px;
+}
+
+.shopping__text_black {
+    @include font(22px, 26px, 400);
+    color: #575757;
+    margin: 0 0 6px 32px;
+}
+
+.shipping__adress {
+    margin: 0 0 0 128px;
+    // border: 1px solid cyan;
+}
+
+.get-a-quote__button {
+    @include font(11px, 13px, normal);
+    max-width: 100px;
+    /*min-height: 47px;*/
+    border: 1px solid #A4A4A4;
+    color: #4A4A4A;
+    // background:$pink-dark-color;
+    padding: 10px 0 11px 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    align-self: auto;
+}
+
+.total {
+    min-width: 360px;
+    background: #F5F3F3;
+    margin: 0 0 0 0;
+}
+
+.sub-total__text {
+    @include font(11px, 13px, normal);
+    text-transform: uppercase;
+    color: #4A4A4A;
+    margin: 39px 0 12px 218px;
+}
+
+.grand-total__text {
+    @include font(16px, 19px, normal);
+    text-transform: uppercase;
+    color: #4A4A4A;
+    margin: 0 0 21px 153px;
+}
+
+.proceed__to_checkout {
+    @include font(16px, 19px, 300);
+    // max-width: 167px;
+    /*min-height: 47px;*/
+    border: 1px solid #FF6A6A;
+    color: $white-color-abs;
+    background:$pink-dark-color;
+    padding: 15px 42px 16px 42px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    align-self: auto;
+    margin: 41px 44px 41px 44px;
+}
+
+
+.registration__title {
+    position: relative;
+    margin: 16px 0 0 0;
+    @include mobile {
+        margin: 17px 0 0 52px;
+    }
+}
+
+/*ОСТАЛСЯ ЭФФЕКТ НАВЕДЕНИЯ*/
+
+.registration__title::before {
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    /*border: 1px solid cyan;*/
+    content: '';
+    margin: 5px 0 0 -33px;
+    background-image: url(../img/cursor.svg);
+}
+
+.registration__text_black {
+    @include font(24px, 29px, 300);
+    /*text-transform: uppercase;*/
+    color: $black-color;
+    @include tablet {
+        @include font(16px, 19px, 300);
+    }
+    @include mobile {
+        @include font(16px, 19px, 300);
+        padding: 0 0 0 8px;
+//        margin: 0 0 17px 4px;
+    }
+}
+
+.legend__text {
+    @include font(16px, 19px, 300);
+    color: $black-color;
+    text-transform: uppercase;
+    margin: 17px 0 20px 0;
+    @include tablet {
+        margin: 0 0 0 17px;
+    }
+    @include mobile {
+        margin: 0 0 17px 8px;
+    }
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    /*border: $border-width solid $border-color;*/
+}
+
+.input-section {
+    display: flex;
+    @include mobile {
+        flex-direction: column;
+    }
+    /*border: $border-width solid $border-color;*/
+}
+
+.cart__input {
+    display: flex;
+    justify-content: space-between;
+    margin: 72px 0 72px 0;
+}
+
+.input__block_cart {
+    display: block;
+    max-width: 235px;
+    margin: 0 0 0 0;
+    @include tablet {
+        margin: 20px 172px 0 16px;
+        padding: 13px 0 16px 18px;
+    }
+    @include mobile {
+        width: 91.7%;
+        margin: 0 0 0 9px;
+    }
+}
+
+.input__text_cart {
+    @include font(14px, 17px, 300);
+    color: $grey-color;
+    text-transform: uppercase;
+    padding: 17px 40px 16px 40px;
+    @include mobile {
+        padding: 13px 0 16px 8px;
+    }
+}
+
+.input__block_shipping {
+    display: block;
+    max-width: 360px;
+    margin: 0 0 0 0;
+}
+
+.input__gender {
+    margin: 34px 0 35px 231px;
+    @include tablet {
+        margin: 20px 0 20px 52px;
+    }
+    @include mobile {
+        margin: 34px 0 35px 37px;
+    }
+}
+
+.radio__input {
+    display: none;    
+}
+
+/*ОСТАЛСЯ ЭФФЕКТ НАВЕДЕНИЯ*/
+
+.radio__input:checked+.radio__label::before {
+    background-image: url(../img/circle.svg);
+    background-color: blue;
+}
+
+.radio__label {
+    position: relative;
+    margin: 0 50px 0 0;
+    /*border: 1px solid red;*/
+}
+
+.radio__label:before {
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    /*border: 1px solid cyan;*/
+    content: '';
+    left: -33px;
+    background-image: url(../img/circle.svg);
+    /*background-size: 20px 20px;*/
+}
+
+.registration__button {
+    @include font(16px, 19px, normal);
+    max-width: 167px;
+    /*min-height: 47px;*/
+    border: 1px solid #FF6A6A;
+    color: $white-color-abs;
+    background:$pink-dark-color;
+    padding: 16px 66px 17px 29px;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    align-self: auto;
+    margin: 39px 0 96px 231px;
+    @include tablet {
+        margin: 34px 0 35px 16px;
+    }
+    @include mobile {
+        margin: 34px 0 35px 9px;
+        padding: 16px 29px 17px 29px;
+    }
+}
+
+/*.last_name {
+    display: block;
+    margin: 21px 0 21px 231px;
+}
+
+.password {
+    display: block;
+    margin: 21px 0 21px 231px;
+}*/
+

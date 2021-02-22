@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson-3</title>
+    <title>Lesson-6</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -72,48 +72,57 @@
         </div>
     </header>
     <main class="main">
-        <section class="registration">
-            <h2 class="registration__text_pink">registration</h2>
+        <section class="shopping">
+            <h2 class="shopping__text_pink">shopping cart</h2>
         </section>
-        <section class="input-section">
-            <form class="input" action="" method="POST">
-                <fieldset>
-                    <legend class="legend__text">Your Name</legend>
-                    <input type="text" placeholder="First Name" class="input__block input__text first_name">
-                    <input type="text" placeholder="Last Name" class="input__block input__text">
-                </fieldset>
-                <fieldset>
-                    <div class="input__gender">
-                        <legend class="visually-hidden">Your gender</legend>
-                        <input class="radio__input" type="radio" id="male" name="gender" value="male">
-                        <label class="radio__label" for="male">Male</label>
-                        <input class="radio__input" type="radio" id="female" name="gender" value="female">
-                        <label class="radio__label" for="female">Female</label>
+        <section class="container shopping-shipping">
+            <div class="shopping__item">
+                <div class="shopping__cart">
+                    <img class="sopping__img" src="./img/fetured_items-4.jpg" alt="boy" width="262" height="306">
+                    <div class="shopping__text">
+                        <p class="shopping__text_heading">mango people t-shirt</p>
+                        <p class="shopping__text_black">Price:<span class="intro__pink"> $300</span></p>
+                        <p class="shopping__text_black">Color: Red</p>
+                        <p class="shopping__text_black">Size: Xl</p>
+                        <p class="shopping__text_black">Quantity: 2</p>
                     </div>
-                </fieldset>
-                <fieldset>
-                    <legend class="legend__text">Login details</legend>
-                    <input class="input__block input__text" type="email" placeholder="Email" required>
-                    <input type="password" placeholder="Password" class="input__block input__text">
-                    <p class="input__block input__text">Please use 8 or more characters, with at least 1 number and a
-                        mixture of uppercase and lowercase
-                        letters</p>
-                </fieldset>
-                <a href="#" class="registration__button">join now</a>
-            </form>
-            <div>
-                <p class="registration__header registration__text_black">loyalty has its perks</p>
-                <p class="registration__text_black">Get in on the loyalty program where you can
-                    earn points and unlock
-                    serious perks. Starting with these as
-                    soon as you join:</p>
-                <p class="registration__title registration__text_black">15% off welcome offer</p>
-                <p class="registration__title registration__text_black">Free shipping, returns and exchanges on all
-                    orders</p>
-                <p class="registration__title registration__text_black">$10 off a purchase on your birthday</p>
-                <p class="registration__title registration__text_black">Early access to products</p>
-                <p class="registration__title registration__text_black">Exclusive offers & rewards</p>
+                </div>
+                <div class="shopping__cart">
+                    <img class="sopping__img" src="./img/fetured_items-4.jpg" alt="boy" width="262" height="306">
+                    <div class="shopping__text">
+                        <p class="shopping__text_heading">mango people t-shirt</p>
+                        <p class="shopping__text_black">Price:<span class="intro__pink"> $300</span></p>
+                        <p class="shopping__text_black">Color: Red</p>
+                        <p class="shopping__text_black">Size: Xl</p>
+                        <p class="shopping__text_black">Quantity: 2</p>
+                    </div>
+                </div>
+                <div class="cart__input">
+                    <input type="text" placeholder="clear shopping cart" class="input__block_cart input__text_cart">
+                    <input type="text" placeholder="continue shopping" class="input__block_cart input__text_cart">
+                </div>
             </div>
+            <div class="shipping__adress">
+                <form class="input" action="" method="POST">
+                    <fieldset>
+                        <div class="input__shipping_adress">
+                            <legend class="legend__text">shipping adress</legend>
+                            <input type="text" placeholder="Bangladesh" class="input__block_shipping input__text">
+                            <input type="text" placeholder="State" class="input__block_shipping input__text">
+                            <input type="text" placeholder="Postcode / Zip" class="input__block_shipping input__text">
+                        </div>
+                    </fieldset>
+                    <a href="#" class="get-a-quote__button">get a quote</a>
+
+                </form>
+                <div class="total">
+                    <p class="sub-total__text">sub total $900</p>
+                    <p class="grand-total__text">grand total<span class="intro__pink"> $900</span></p>
+                    <div class="line__blue"></div>
+                    <a href="#" class="proceed__to_checkout">proceed to checkout</a>
+                </div>
+            </div>
+
         </section>
         <section class="subscribe">
             <h2 class="visually-hidden">subscribe</h2>
@@ -136,7 +145,7 @@
     </main>
 
     <footer class="footer">
-        <h2 class="visually-hidden">footer</h2>
+        <h2 class="visually-hidden">advanteges</h2>
         <div class="footer__wrapper">
             <p class="footer__text">© 2021 Brand All Rights Reserved.</p>
             <ul class="footer__list">
